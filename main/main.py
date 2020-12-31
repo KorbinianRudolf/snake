@@ -30,8 +30,8 @@ BackGround = sps.Background(back_img_loc, [0, 0])
 
 # group of sprites that will be the obstacles
 obs = pygame.sprite.Group()
-ob1 = sps.Block((WIDTH/2, HEIGHT-40))
-ob2 = sps.Block((WIDTH/2 + 200, HEIGHT-120))
+ob1 = sps.Block((WIDTH / 2, HEIGHT - 40))
+ob2 = sps.Block((WIDTH / 2 + 200, HEIGHT - 120))
 obs.add(ob1)
 obs.add(ob2)
 
@@ -51,8 +51,6 @@ reached = False  # if the jmp_goal was reached
 collision_detected = False
 col_old = False  # old value of collision detection
 fall = False  # if the player currently falls
-
-
 
 while not game_over:
     clock.tick(FPS)
