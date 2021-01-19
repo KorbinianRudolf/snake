@@ -18,6 +18,8 @@ class Player(pygame.sprite.Sprite):
         self.rect.x += width
         if self.rect.x > self.sc_wd:
             self.rect.x = 0
+        if self.rect.x < 0:
+            self.rect.x = self.sc_wd
 
     def draw(self, screen):
         screen.blit(self.image, self.rect)
